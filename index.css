@@ -1,0 +1,26 @@
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+}
+
+.box {
+    background-color: red;
+    height: 100px;
+    width: 200px;
+    animation: myanima 3s infinite alternate;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes myanima {
+    0%   {transform: scale(2); background-color: red;}
+    25%  {transform: rotate(180deg); background-color: yellow;}
+    50%  {transform: translateX(180deg); background-color: blue;}
+    100% {transform: translateY(100px); background-color: green;} 
+}
